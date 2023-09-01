@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masai School Application</title>
+</head>
+<body>
+  <h1>Masai School Application</h1>
+  <p>Enter Your name and gender to apply for Masai School</p>
+  <h2 id="display">Display entered name and gender here</h2>
+  <hr>
+  <input type="text" id="name" placeholder="Enter your name">
+  <select id="gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option> <!-- Fixed the Female option -->
+  </select>
+  <button onclick="applyBtn()">Apply</button>
+  
+  <script>
+    function applyBtn() {
+      const name = document.getElementById("name").value;
+      const gender = document.getElementById("gender").value;
+      const displayElement = document.getElementById("display");
+      
+      displayElement.textContent = (`Name:${name},gender:${gender}`)
+    }
+  </script>
+</body>
+</html>
