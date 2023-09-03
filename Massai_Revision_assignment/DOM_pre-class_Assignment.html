@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlertDom</title>
+</head>
+<body>
+    <input type="text" id="myInput">
+    <button onclick="myButton()">Submit</button>
+    <p id="displayShow"></p>
+</body>
+<script>
+    function myButton() 
+    {
+        let Input =document.getElementById("myInput").value;
+        alert("Entered value:" +Input);
+        let display = document.getElementById("displayShow")
+        displayShow.innerText= ("Entered value:" +Input);
+    }
+</script>
+</html>
